@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 cal.set(Calendar.MONTH, monthOfYear)
                 cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
 
-                val myFormat = "dd.MM.yyyy" // mention the format you need
+                val myFormat = "dd.MM.yyyy"
                 val sdf = SimpleDateFormat(myFormat, Locale.US)
                 textView.text = sdf.format(cal.time)
 
@@ -56,6 +56,8 @@ class MainActivity : AppCompatActivity() {
         val getAge = findViewById<TextView>(R.id.age)
         val getSaving = findViewById<TextView>(R.id.basicsaving)
         var saving = 0;
+        val getInvest = findViewById<TextView>(R.id.investment)
+
 
         dob.set(year, month, day)
 
@@ -87,6 +89,7 @@ class MainActivity : AppCompatActivity() {
 
         getAge.text = getString(R.string.your_age)+ ageInt.toString()
         getSaving.text = getString(R.string.basicsaving) + saving.toString()
+        getInvest.text = getString(R.string.Ainvestment) + saving * 0.3
 
         return ageInt.toString()
     }

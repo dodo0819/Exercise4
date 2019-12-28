@@ -5,4 +5,5 @@
     <string name="tip">(Click on you may change birth date)</string>
     <string name="your_age">Your Age:</string>
     <string name="basicsaving">Basic Saving: RM</string>
+    <string name="Ainvestment">Allowable Investment: RM</string>
 </resources>
