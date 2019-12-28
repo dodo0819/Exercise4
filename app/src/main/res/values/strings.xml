@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exercise 4</string>
+    <string name="date">date</string>
+    <string name="birthdate">Birth Date:</string>
+    <string name="tip">(Click on you may change birth date)</string>
+    <string name="your_age">Your Age:</string>
+    <string name="basicsaving">Basic Saving: RM</string>
+</resources>
