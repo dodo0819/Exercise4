@@ -17,7 +17,7 @@
         android:id="@+id/basicsaving"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="464dp"
+        android:layout_marginBottom="456dp"
         android:text="@string/basicsaving"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,12 +27,15 @@
         android:id="@+id/birthdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
         android:layout_marginBottom="670dp"
         android:text="@string/birthdate"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView_date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,9 +46,10 @@
         android:text="@string/your_age"
         app:layout_constraintBottom_toTopOf="@+id/basicsaving"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintVertical_bias="0.966" />
 
     <Button
         android:id="@+id/ok"
@@ -54,20 +58,24 @@
         android:text="@android:string/ok"
         app:layout_constraintBottom_toTopOf="@+id/age"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_date"
-        app:layout_constraintVertical_bias="0.442" />
+        app:layout_constraintVertical_bias="0.791" />
 
     <TextView
         android:id="@+id/textView_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="200dp"
-        android:layout_marginRight="200dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
         android:text="@string/date"
         app:layout_constraintBottom_toBottomOf="@+id/birthdate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/birthdate" />
+        app:layout_constraintStart_toEndOf="@+id/birthdate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView7"
@@ -89,9 +97,9 @@
         android:text="@string/Ainvestment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/basicsaving"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
